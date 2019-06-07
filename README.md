@@ -45,4 +45,4 @@ Xcode 11+ & Swift 5.1
 
 Add the following to your `Cartfile`:
 
-`github "vincent-pradeilles/KeyPathKit"`
+`github "vincent-pradeilles/injectable"`
