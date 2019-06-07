@@ -9,13 +9,13 @@
 import Foundation
 
 struct Resolver {
-    static private var factories: [String : () -> Any] = [:]
+    static private var factories: [ObjectIdentifier : () -> Any] = [:]
     
     static func register<T>(_ type: T.Type, _ factory: @escaping () -> T) {
-        self.factories[String(describing: type)] = factory
+        self.factories[ObjectIdentifier(type)] = factory
     }
     static func resolve<T>(_ type: T.Type) -> T {
-        return self.factories[String(describing: type)]!() as! T
+        return self.factories[ObjectIdentifier(type)]!() as! T
     }
 }
 
