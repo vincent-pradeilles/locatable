@@ -35,6 +35,16 @@ let controller = MyController()
 controller.work() // I'm performing a service 😊
 ```
 
+For convenience, some shorthand syntax are also available:
+
+```swift
+// leverages @autoclosure
+Resolver.register(Servicing.self, Service())
+
+// leverages default argument values
+Resolver.register { return Service() as Servicing }
+```
+
 ## Requirements
 
 Xcode 11+ & Swift 5.1

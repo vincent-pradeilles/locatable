@@ -9,13 +9,28 @@
 /* Begin PBXBuildFile section */
 		BF20C0F822A9E1D900E09C85 /* Injectable.h in Headers */ = {isa = PBXBuildFile; fileRef = BF20C0F622A9E1D900E09C85 /* Injectable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BF20C0FF22A9E1E600E09C85 /* Injectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF20C0FE22A9E1E600E09C85 /* Injectable.swift */; };
+		BFEF168222ABF99C0094B8C3 /* InjectableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEF168122ABF99C0094B8C3 /* InjectableTests.swift */; };
+		BFEF168422ABF99C0094B8C3 /* Injectable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF20C0F322A9E1D900E09C85 /* Injectable.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BFEF168522ABF99C0094B8C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF20C0EA22A9E1D900E09C85 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF20C0F222A9E1D900E09C85;
+			remoteInfo = Injectable;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		BF20C0F322A9E1D900E09C85 /* Injectable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Injectable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF20C0F622A9E1D900E09C85 /* Injectable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Injectable.h; sourceTree = "<group>"; };
 		BF20C0F722A9E1D900E09C85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF20C0FE22A9E1E600E09C85 /* Injectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injectable.swift; sourceTree = "<group>"; };
+		BFEF167F22ABF99C0094B8C3 /* InjectableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InjectableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFEF168122ABF99C0094B8C3 /* InjectableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectableTests.swift; sourceTree = "<group>"; };
+		BFEF168322ABF99C0094B8C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +41,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BFEF167C22ABF99C0094B8C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFEF168422ABF99C0094B8C3 /* Injectable.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -33,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				BF20C0F522A9E1D900E09C85 /* Injectable */,
+				BFEF168022ABF99C0094B8C3 /* InjectableTests */,
 				BF20C0F422A9E1D900E09C85 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				BF20C0F322A9E1D900E09C85 /* Injectable.framework */,
+				BFEF167F22ABF99C0094B8C3 /* InjectableTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -53,6 +78,15 @@
 				BF20C0FE22A9E1E600E09C85 /* Injectable.swift */,
 			);
 			path = Injectable;
+			sourceTree = "<group>";
+		};
+		BFEF168022ABF99C0094B8C3 /* InjectableTests */ = {
+			isa = PBXGroup;
+			children = (
+				BFEF168122ABF99C0094B8C3 /* InjectableTests.swift */,
+				BFEF168322ABF99C0094B8C3 /* Info.plist */,
+			);
+			path = InjectableTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,18 +121,40 @@
 			productReference = BF20C0F322A9E1D900E09C85 /* Injectable.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		BFEF167E22ABF99C0094B8C3 /* InjectableTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFEF168922ABF99C0094B8C3 /* Build configuration list for PBXNativeTarget "InjectableTests" */;
+			buildPhases = (
+				BFEF167B22ABF99C0094B8C3 /* Sources */,
+				BFEF167C22ABF99C0094B8C3 /* Frameworks */,
+				BFEF167D22ABF99C0094B8C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFEF168622ABF99C0094B8C3 /* PBXTargetDependency */,
+			);
+			name = InjectableTests;
+			productName = InjectableTests;
+			productReference = BFEF167F22ABF99C0094B8C3 /* InjectableTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		BF20C0EA22A9E1D900E09C85 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = Vincent;
 				TargetAttributes = {
 					BF20C0F222A9E1D900E09C85 = {
 						CreatedOnToolsVersion = 11.0;
 						LastSwiftMigration = 1100;
+					};
+					BFEF167E22ABF99C0094B8C3 = {
+						CreatedOnToolsVersion = 11.0;
 					};
 				};
 			};
@@ -116,12 +172,20 @@
 			projectRoot = "";
 			targets = (
 				BF20C0F222A9E1D900E09C85 /* Injectable */,
+				BFEF167E22ABF99C0094B8C3 /* InjectableTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		BF20C0F122A9E1D900E09C85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFEF167D22ABF99C0094B8C3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -139,7 +203,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BFEF167B22ABF99C0094B8C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFEF168222ABF99C0094B8C3 /* InjectableTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BFEF168622ABF99C0094B8C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF20C0F222A9E1D900E09C85 /* Injectable */;
+			targetProxy = BFEF168522ABF99C0094B8C3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		BF20C0F922A9E1D900E09C85 /* Debug */ = {
@@ -313,6 +393,42 @@
 			};
 			name = Release;
 		};
+		BFEF168722ABF99C0094B8C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2937XWQ9VF;
+				INFOPLIST_FILE = InjectableTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fr.vincentpradeilles.InjectableTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BFEF168822ABF99C0094B8C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2937XWQ9VF;
+				INFOPLIST_FILE = InjectableTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fr.vincentpradeilles.InjectableTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -330,6 +446,15 @@
 			buildConfigurations = (
 				BF20C0FC22A9E1D900E09C85 /* Debug */,
 				BF20C0FD22A9E1D900E09C85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFEF168922ABF99C0094B8C3 /* Build configuration list for PBXNativeTarget "InjectableTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFEF168722ABF99C0094B8C3 /* Debug */,
+				BFEF168822ABF99C0094B8C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

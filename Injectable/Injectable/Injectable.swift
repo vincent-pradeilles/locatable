@@ -8,20 +8,28 @@
 
 import Foundation
 
-struct Resolver {
-    static private var factories: [ObjectIdentifier : () -> Any] = [:]
+public struct Resolver {
+    static var factories: [ObjectIdentifier : () -> Any] = [:]
     
-    static func register<T>(_ type: T.Type, _ factory: @escaping () -> T) {
+    public static func register<T>(_ type: T.Type = T.self, _ factory: @escaping () -> T) {
         self.factories[ObjectIdentifier(type)] = factory
     }
-    static func resolve<T>(_ type: T.Type) -> T {
+    
+    public static func register<T>(_ type: T.Type, _ factory: @autoclosure @escaping () -> T) {
+        self.factories[ObjectIdentifier(type)] = factory
+    }
+    
+    public static func resolve<T>(_ type: T.Type) -> T {
         return self.factories[ObjectIdentifier(type)]!() as! T
     }
 }
 
 @propertyWrapper
-struct Injectable<Service> {
-    var value: Service {
+public struct Injectable<Service> {
+    
+    public init() { }
+    
+    public var value: Service {
         get {
             return Resolver.resolve(Service.self)
         }
