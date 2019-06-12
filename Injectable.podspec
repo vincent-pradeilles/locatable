@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Injectable'
-  s.version          = '0.2.0'
+  s.version          = '0.2'
   s.summary          = 'Injectable is a micro framework that leverages Property Wrappers to implement the Service Locator pattern, through a custom attribute @Injectable'
 
   s.description      = <<-DESC
@@ -38,10 +38,11 @@ controller.work() // I'm performing a service 😊
   s.author           = { 'Vincent Pradeilles' => 'vin.pradeilles+injectable@gmail.com' }
   s.source           = { :git => 'https://github.com/vincent-pradeilles/injectable.git', :tag => s.version.to_s }
 
+  s.swift_version = '5.1'
   s.ios.deployment_target = '9.0'
 
   s.framework = 'Foundation'
 
-  s.source_files = 'Injectable/**/*.swift'
+  s.source_files = 'Injectable/Injectable/**/*.swift'
 
 end
