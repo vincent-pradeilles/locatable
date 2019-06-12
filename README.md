@@ -5,7 +5,7 @@
 
 ## Context
 
-Injectable is a Swift micro framework that leverages Property Wrapper to implement the Service Locator pattern, through a custom attribute `@Injectable`.
+Injectable is a Swift micro framework that leverages Property Wrappers to implement the Service Locator pattern, through a custom attribute `@Injectable`.
 
 Here's an example of how it can be used:
 
