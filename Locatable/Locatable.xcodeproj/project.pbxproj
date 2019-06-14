@@ -7,185 +7,184 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BF20C0F822A9E1D900E09C85 /* Injectable.h in Headers */ = {isa = PBXBuildFile; fileRef = BF20C0F622A9E1D900E09C85 /* Injectable.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BF20C0FF22A9E1E600E09C85 /* Injectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF20C0FE22A9E1E600E09C85 /* Injectable.swift */; };
-		BFEF168222ABF99C0094B8C3 /* InjectableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEF168122ABF99C0094B8C3 /* InjectableTests.swift */; };
-		BFEF168422ABF99C0094B8C3 /* Injectable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF20C0F322A9E1D900E09C85 /* Injectable.framework */; };
+		BF4FAD5A22B37BFF005C30A2 /* Locatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4FAD5922B37BFE005C30A2 /* Locatable.swift */; };
+		BF824E7422B37BD700A3ED94 /* Locatable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF824E6A22B37BD700A3ED94 /* Locatable.framework */; };
+		BF824E7922B37BD700A3ED94 /* LocatableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF824E7822B37BD700A3ED94 /* LocatableTests.swift */; };
+		BF824E7B22B37BD700A3ED94 /* Locatable.h in Headers */ = {isa = PBXBuildFile; fileRef = BF824E6D22B37BD700A3ED94 /* Locatable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		BFEF168522ABF99C0094B8C3 /* PBXContainerItemProxy */ = {
+		BF824E7522B37BD700A3ED94 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = BF20C0EA22A9E1D900E09C85 /* Project object */;
+			containerPortal = BF824E6122B37BD700A3ED94 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = BF20C0F222A9E1D900E09C85;
-			remoteInfo = Injectable;
+			remoteGlobalIDString = BF824E6922B37BD700A3ED94;
+			remoteInfo = Locatable;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BF20C0F322A9E1D900E09C85 /* Injectable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Injectable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BF20C0F622A9E1D900E09C85 /* Injectable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Injectable.h; sourceTree = "<group>"; };
-		BF20C0F722A9E1D900E09C85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BF20C0FE22A9E1E600E09C85 /* Injectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injectable.swift; sourceTree = "<group>"; };
-		BFEF167F22ABF99C0094B8C3 /* InjectableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InjectableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BFEF168122ABF99C0094B8C3 /* InjectableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectableTests.swift; sourceTree = "<group>"; };
-		BFEF168322ABF99C0094B8C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF4FAD5922B37BFE005C30A2 /* Locatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Locatable.swift; sourceTree = "<group>"; };
+		BF824E6A22B37BD700A3ED94 /* Locatable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Locatable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF824E6D22B37BD700A3ED94 /* Locatable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Locatable.h; sourceTree = "<group>"; };
+		BF824E6E22B37BD700A3ED94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF824E7322B37BD700A3ED94 /* LocatableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocatableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF824E7822B37BD700A3ED94 /* LocatableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocatableTests.swift; sourceTree = "<group>"; };
+		BF824E7A22B37BD700A3ED94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		BF20C0F022A9E1D900E09C85 /* Frameworks */ = {
+		BF824E6722B37BD700A3ED94 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BFEF167C22ABF99C0094B8C3 /* Frameworks */ = {
+		BF824E7022B37BD700A3ED94 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFEF168422ABF99C0094B8C3 /* Injectable.framework in Frameworks */,
+				BF824E7422B37BD700A3ED94 /* Locatable.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BF20C0E922A9E1D900E09C85 = {
+		BF824E6022B37BD700A3ED94 = {
 			isa = PBXGroup;
 			children = (
-				BF20C0F522A9E1D900E09C85 /* Injectable */,
-				BFEF168022ABF99C0094B8C3 /* InjectableTests */,
-				BF20C0F422A9E1D900E09C85 /* Products */,
+				BF824E6C22B37BD700A3ED94 /* Locatable */,
+				BF824E7722B37BD700A3ED94 /* LocatableTests */,
+				BF824E6B22B37BD700A3ED94 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		BF20C0F422A9E1D900E09C85 /* Products */ = {
+		BF824E6B22B37BD700A3ED94 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BF20C0F322A9E1D900E09C85 /* Injectable.framework */,
-				BFEF167F22ABF99C0094B8C3 /* InjectableTests.xctest */,
+				BF824E6A22B37BD700A3ED94 /* Locatable.framework */,
+				BF824E7322B37BD700A3ED94 /* LocatableTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BF20C0F522A9E1D900E09C85 /* Injectable */ = {
+		BF824E6C22B37BD700A3ED94 /* Locatable */ = {
 			isa = PBXGroup;
 			children = (
-				BF20C0F622A9E1D900E09C85 /* Injectable.h */,
-				BF20C0F722A9E1D900E09C85 /* Info.plist */,
-				BF20C0FE22A9E1E600E09C85 /* Injectable.swift */,
+				BF824E6D22B37BD700A3ED94 /* Locatable.h */,
+				BF4FAD5922B37BFE005C30A2 /* Locatable.swift */,
+				BF824E6E22B37BD700A3ED94 /* Info.plist */,
 			);
-			path = Injectable;
+			path = Locatable;
 			sourceTree = "<group>";
 		};
-		BFEF168022ABF99C0094B8C3 /* InjectableTests */ = {
+		BF824E7722B37BD700A3ED94 /* LocatableTests */ = {
 			isa = PBXGroup;
 			children = (
-				BFEF168122ABF99C0094B8C3 /* InjectableTests.swift */,
-				BFEF168322ABF99C0094B8C3 /* Info.plist */,
+				BF824E7822B37BD700A3ED94 /* LocatableTests.swift */,
+				BF824E7A22B37BD700A3ED94 /* Info.plist */,
 			);
-			path = InjectableTests;
+			path = LocatableTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		BF20C0EE22A9E1D900E09C85 /* Headers */ = {
+		BF824E6522B37BD700A3ED94 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF20C0F822A9E1D900E09C85 /* Injectable.h in Headers */,
+				BF824E7B22B37BD700A3ED94 /* Locatable.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		BF20C0F222A9E1D900E09C85 /* Injectable */ = {
+		BF824E6922B37BD700A3ED94 /* Locatable */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BF20C0FB22A9E1D900E09C85 /* Build configuration list for PBXNativeTarget "Injectable" */;
+			buildConfigurationList = BF824E7E22B37BD700A3ED94 /* Build configuration list for PBXNativeTarget "Locatable" */;
 			buildPhases = (
-				BF20C0EE22A9E1D900E09C85 /* Headers */,
-				BF20C0EF22A9E1D900E09C85 /* Sources */,
-				BF20C0F022A9E1D900E09C85 /* Frameworks */,
-				BF20C0F122A9E1D900E09C85 /* Resources */,
+				BF824E6522B37BD700A3ED94 /* Headers */,
+				BF824E6622B37BD700A3ED94 /* Sources */,
+				BF824E6722B37BD700A3ED94 /* Frameworks */,
+				BF824E6822B37BD700A3ED94 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Injectable;
-			productName = Injectable;
-			productReference = BF20C0F322A9E1D900E09C85 /* Injectable.framework */;
+			name = Locatable;
+			productName = Locatable;
+			productReference = BF824E6A22B37BD700A3ED94 /* Locatable.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		BFEF167E22ABF99C0094B8C3 /* InjectableTests */ = {
+		BF824E7222B37BD700A3ED94 /* LocatableTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BFEF168922ABF99C0094B8C3 /* Build configuration list for PBXNativeTarget "InjectableTests" */;
+			buildConfigurationList = BF824E8122B37BD700A3ED94 /* Build configuration list for PBXNativeTarget "LocatableTests" */;
 			buildPhases = (
-				BFEF167B22ABF99C0094B8C3 /* Sources */,
-				BFEF167C22ABF99C0094B8C3 /* Frameworks */,
-				BFEF167D22ABF99C0094B8C3 /* Resources */,
+				BF824E6F22B37BD700A3ED94 /* Sources */,
+				BF824E7022B37BD700A3ED94 /* Frameworks */,
+				BF824E7122B37BD700A3ED94 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				BFEF168622ABF99C0094B8C3 /* PBXTargetDependency */,
+				BF824E7622B37BD700A3ED94 /* PBXTargetDependency */,
 			);
-			name = InjectableTests;
-			productName = InjectableTests;
-			productReference = BFEF167F22ABF99C0094B8C3 /* InjectableTests.xctest */;
+			name = LocatableTests;
+			productName = LocatableTests;
+			productReference = BF824E7322B37BD700A3ED94 /* LocatableTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		BF20C0EA22A9E1D900E09C85 /* Project object */ = {
+		BF824E6122B37BD700A3ED94 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = Vincent;
 				TargetAttributes = {
-					BF20C0F222A9E1D900E09C85 = {
-						CreatedOnToolsVersion = 11.0;
+					BF824E6922B37BD700A3ED94 = {
+						CreatedOnToolsVersion = 10.2.1;
 						LastSwiftMigration = 1100;
 					};
-					BFEF167E22ABF99C0094B8C3 = {
-						CreatedOnToolsVersion = 11.0;
+					BF824E7222B37BD700A3ED94 = {
+						CreatedOnToolsVersion = 10.2.1;
 					};
 				};
 			};
-			buildConfigurationList = BF20C0ED22A9E1D900E09C85 /* Build configuration list for PBXProject "Injectable" */;
+			buildConfigurationList = BF824E6422B37BD700A3ED94 /* Build configuration list for PBXProject "Locatable" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 			);
-			mainGroup = BF20C0E922A9E1D900E09C85;
-			productRefGroup = BF20C0F422A9E1D900E09C85 /* Products */;
+			mainGroup = BF824E6022B37BD700A3ED94;
+			productRefGroup = BF824E6B22B37BD700A3ED94 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BF20C0F222A9E1D900E09C85 /* Injectable */,
-				BFEF167E22ABF99C0094B8C3 /* InjectableTests */,
+				BF824E6922B37BD700A3ED94 /* Locatable */,
+				BF824E7222B37BD700A3ED94 /* LocatableTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		BF20C0F122A9E1D900E09C85 /* Resources */ = {
+		BF824E6822B37BD700A3ED94 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BFEF167D22ABF99C0094B8C3 /* Resources */ = {
+		BF824E7122B37BD700A3ED94 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -195,34 +194,34 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		BF20C0EF22A9E1D900E09C85 /* Sources */ = {
+		BF824E6622B37BD700A3ED94 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF20C0FF22A9E1E600E09C85 /* Injectable.swift in Sources */,
+				BF4FAD5A22B37BFF005C30A2 /* Locatable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BFEF167B22ABF99C0094B8C3 /* Sources */ = {
+		BF824E6F22B37BD700A3ED94 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFEF168222ABF99C0094B8C3 /* InjectableTests.swift in Sources */,
+				BF824E7922B37BD700A3ED94 /* LocatableTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		BFEF168622ABF99C0094B8C3 /* PBXTargetDependency */ = {
+		BF824E7622B37BD700A3ED94 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = BF20C0F222A9E1D900E09C85 /* Injectable */;
-			targetProxy = BFEF168522ABF99C0094B8C3 /* PBXContainerItemProxy */;
+			target = BF824E6922B37BD700A3ED94 /* Locatable */;
+			targetProxy = BF824E7522B37BD700A3ED94 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		BF20C0F922A9E1D900E09C85 /* Debug */ = {
+		BF824E7C22B37BD700A3ED94 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -254,6 +253,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -273,7 +273,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -285,7 +285,7 @@
 			};
 			name = Debug;
 		};
-		BF20C0FA22A9E1D900E09C85 /* Release */ = {
+		BF824E7D22B37BD700A3ED94 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -317,6 +317,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -330,7 +331,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -342,25 +343,25 @@
 			};
 			name = Release;
 		};
-		BF20C0FC22A9E1D900E09C85 /* Debug */ = {
+		BF824E7F22B37BD700A3ED94 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2937XWQ9VF;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Injectable/Info.plist;
+				INFOPLIST_FILE = Locatable/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = fr.vincentpradeilles.Injectable;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.vincentpradeilles.Locatable;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -369,25 +370,25 @@
 			};
 			name = Debug;
 		};
-		BF20C0FD22A9E1D900E09C85 /* Release */ = {
+		BF824E8022B37BD700A3ED94 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2937XWQ9VF;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Injectable/Info.plist;
+				INFOPLIST_FILE = Locatable/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = fr.vincentpradeilles.Injectable;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.vincentpradeilles.Locatable;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -395,36 +396,38 @@
 			};
 			name = Release;
 		};
-		BFEF168722ABF99C0094B8C3 /* Debug */ = {
+		BF824E8222B37BD700A3ED94 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2937XWQ9VF;
-				INFOPLIST_FILE = InjectableTests/Info.plist;
+				INFOPLIST_FILE = LocatableTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = fr.vincentpradeilles.InjectableTests;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.vincentpradeilles.LocatableTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		BFEF168822ABF99C0094B8C3 /* Release */ = {
+		BF824E8322B37BD700A3ED94 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2937XWQ9VF;
-				INFOPLIST_FILE = InjectableTests/Info.plist;
+				INFOPLIST_FILE = LocatableTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = fr.vincentpradeilles.InjectableTests;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.vincentpradeilles.LocatableTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -434,34 +437,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BF20C0ED22A9E1D900E09C85 /* Build configuration list for PBXProject "Injectable" */ = {
+		BF824E6422B37BD700A3ED94 /* Build configuration list for PBXProject "Locatable" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BF20C0F922A9E1D900E09C85 /* Debug */,
-				BF20C0FA22A9E1D900E09C85 /* Release */,
+				BF824E7C22B37BD700A3ED94 /* Debug */,
+				BF824E7D22B37BD700A3ED94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BF20C0FB22A9E1D900E09C85 /* Build configuration list for PBXNativeTarget "Injectable" */ = {
+		BF824E7E22B37BD700A3ED94 /* Build configuration list for PBXNativeTarget "Locatable" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BF20C0FC22A9E1D900E09C85 /* Debug */,
-				BF20C0FD22A9E1D900E09C85 /* Release */,
+				BF824E7F22B37BD700A3ED94 /* Debug */,
+				BF824E8022B37BD700A3ED94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BFEF168922ABF99C0094B8C3 /* Build configuration list for PBXNativeTarget "InjectableTests" */ = {
+		BF824E8122B37BD700A3ED94 /* Build configuration list for PBXNativeTarget "LocatableTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BFEF168722ABF99C0094B8C3 /* Debug */,
-				BFEF168822ABF99C0094B8C3 /* Release */,
+				BF824E8222B37BD700A3ED94 /* Debug */,
+				BF824E8322B37BD700A3ED94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = BF20C0EA22A9E1D900E09C85 /* Project object */;
+	rootObject = BF824E6122B37BD700A3ED94 /* Project object */;
 }
