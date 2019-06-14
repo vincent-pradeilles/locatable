@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Locatable'
-  s.version          = '0.2'
+  s.version          = '0.3'
   s.summary          = 'Locatable is a micro framework that leverages Property Wrappers to implement the Service Locator pattern, through a custom attribute @Locatable'
 
   s.description      = <<-DESC
@@ -18,7 +18,7 @@ class Service: Servicing {
     }
 }
 
-Resolver.register(Servicing.self, { return Service() })
+Locator.register(Servicing.self, { return Service() })
 
 class MyController {
     @Locatable var service: Servicing
