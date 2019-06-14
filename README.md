@@ -5,7 +5,7 @@
 
 ## Context
 
-Injectable is a Swift micro framework that leverages Property Wrappers to implement the Service Locator pattern, through a custom attribute `@Injectable`.
+Locatable is a Swift micro framework that leverages Property Wrappers to implement the Service Locator pattern, through a custom attribute `@Locatable`.
 
 Here's an example of how it can be used:
 
@@ -20,10 +20,10 @@ class Service: Servicing {
     }
 }
 
-Resolver.register(Servicing.self, { return Service() })
+Locator.register(Servicing.self, { return Service() })
 
 class MyController {
-    @Injectable var service: Servicing
+    @Locatable var service: Servicing
     
     func work() {
         self.service.action()
@@ -39,10 +39,10 @@ For convenience, some shorthand syntax are also available:
 
 ```swift
 // leverages @autoclosure
-Resolver.register(Servicing.self, Service())
+Locator.register(Servicing.self, Service())
 
 // leverages default argument values
-Resolver.register { return Service() as Servicing }
+Locator.register { return Service() as Servicing }
 ```
 
 ## Requirements
