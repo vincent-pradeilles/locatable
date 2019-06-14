@@ -1,4 +1,4 @@
-# Injectable
+# Locatable
 
 ![platforms](https://img.shields.io/badge/platforms-iOS-333333.svg)
 ![pod](https://img.shields.io/cocoapods/v/Locatable.svg)
@@ -51,6 +51,12 @@ Locator.register { return Service() as Servicing }
 Xcode 11+ & Swift 5.1
 
 ## Installation
+
+### CocoaPods
+
+Add the following to your `Podfile`:
+
+`pod "Locatable"`
 
 ### Carthage
 
