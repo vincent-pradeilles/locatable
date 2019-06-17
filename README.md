@@ -62,4 +62,4 @@ Add the following to your `Podfile`:
 
 Add the following to your `Cartfile`:
 
-`github "vincent-pradeilles/injectable"`
+`github "vincent-pradeilles/locatable"`
