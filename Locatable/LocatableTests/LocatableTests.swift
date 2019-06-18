@@ -9,7 +9,7 @@
 import XCTest
 @testable import Locatable
 
-fileprivate protocol Servicing {
+fileprivate protocol Servicing: AnyObject {
     func action()
 }
 
@@ -31,5 +31,18 @@ class LocatableTests: XCTestCase {
         let service = Locator.locate(Servicing.self)
         
         XCTAssert(service is Service)
+    }
+    
+    func testScopedInstance() {
+        Locator.register(Servicing.self, { () -> () -> Service in
+            let singleton = Service()
+            
+            return { return singleton }
+        }())
+        
+        let first = Locator.locate(Servicing.self)
+        let second = Locator.locate(Servicing.self)
+        
+        XCTAssert(first === second)
     }
 }
