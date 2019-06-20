@@ -24,7 +24,7 @@ class Service: Servicing {
 Locator.register(Servicing.self, { return Service() })
 
 class MyController {
-    @Locatable var service: Servicing
+    @Locatable(.sharedInstance) var service: Servicing
     
     func work() {
         self.service.action()
@@ -44,6 +44,16 @@ Locator.register(Servicing.self, Service())
 
 // leverages default argument values
 Locator.register { return Service() as Servicing }
+```
+
+Service locating supports two distinct semantics:
+
+```swift
+// Will return an instance that is shared across the app
+Locatable(.sharedInstance) var service: Servicing
+
+// Will return a new instance every time
+Locatable(.newInstance) var service: Servicing
 ```
 
 ## Requirements

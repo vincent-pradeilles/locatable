@@ -28,9 +28,18 @@ class LocatableTests: XCTestCase {
     func testServiceLocating() {
         Locator.register(Servicing.self, { return Service() })
 
-        let service = Locator.locate(Servicing.self)
+        let service = Locator.locate(Servicing.self, locatingMode: .newInstance)
         
         XCTAssert(service is Service)
+    }
+    
+    func testSharedServiceLocating() {
+        Locator.register(Servicing.self, { return Service() })
+        
+        let firstServiceReference = Locator.locate(Servicing.self, locatingMode: .sharedInstance)
+        let secondServiceReference = Locator.locate(Servicing.self, locatingMode: .sharedInstance)
+        
+        XCTAssert(firstServiceReference === secondServiceReference)
     }
     
     func testScopedInstance() {
@@ -40,8 +49,8 @@ class LocatableTests: XCTestCase {
             return { return singleton }
         }())
         
-        let first = Locator.locate(Servicing.self)
-        let second = Locator.locate(Servicing.self)
+        let first = Locator.locate(Servicing.self, locatingMode: .newInstance)
+        let second = Locator.locate(Servicing.self, locatingMode: .newInstance)
         
         XCTAssert(first === second)
     }
