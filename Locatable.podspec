@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Locatable'
-  s.version          = '0.3'
+  s.version          = '0.4'
   s.summary          = 'Locatable is a micro framework that leverages Property Wrappers to implement the Service Locator pattern, through a custom attribute @Locatable'
 
   s.description      = <<-DESC
