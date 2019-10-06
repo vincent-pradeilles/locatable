@@ -43,6 +43,6 @@ controller.work() // I'm performing a service 😊
 
   s.framework = 'Foundation'
 
-  s.source_files = 'Locatable/Locatable/**/*.swift'
+  s.source_files = 'Sources/Locatable/**/*.swift'
 
 end
