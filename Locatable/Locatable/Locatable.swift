@@ -55,7 +55,7 @@ public struct Locatable<Service> {
         self.locatingMode = locatingMode
     }
     
-    public var value: Service {
+    public var wrappedValue: Service {
         get {
             return Locator.locate(Service.self, locatingMode: locatingMode)
         }
